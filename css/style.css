@@ -1,12 +1,68 @@
 body {
   background-color: dodgerblue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 h1 {
-  margin: 0 auto;
+  text-align: center;
   font-family: fantasy;
+  font-size: 36px;
+}
+
+h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
 }
 
 footer {
   margin-top: 20px;
+  text-align: center;
+  color: gold;
+}
+
+container {
+  max-width: 600px;
+  margin: 60px auto;
+  background: white;
+  padding: 20px;
+  margin: 60px 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 15px;
+}
+
+select {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.city {
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-bottom-style: double;
+}
+.city:last-child {
+  border: none;
+}
+
+.date {
+  opacity: 1;
+}
+
+.time {
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 26px;
+  vertical-align: middle;
+  line-height: 48px;
 }
