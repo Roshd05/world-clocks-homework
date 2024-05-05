@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>World Clocks by Roshni Daryanani</title>
   </head>
@@ -13,23 +15,25 @@
       <select>
         <option value="">Select a City...</option>
         <option value="">Podgorica</option>
-        <option value="">Caracas/option></option>
+        <option value="">Caracas</option>
         <option value="">Prague</option>
       </select>
 
-      <div class="city">
-        <div>
-          <h2>Lisbon 🇵🇹</h2>
-          <div class="date">The Date</div>
+      <div class="cities">
+        <div class="city" id="lisbon">
+          <div>
+            <h2>Lisbon 🇵🇹</h2>
+            <div class="date">The Date</div>
+          </div>
+          <div class="time">The Time</div>
         </div>
-        <div class="time">The Time</div>
-      </div>
-      <div class="city">
-        <div>
-          <h2>Sydney 🇦🇺</h2>
-          <div class="date">The Date</div>
+        <div class="city" id="sydney">
+          <div>
+            <h2>Sydney 🇦🇺</h2>
+            <div class="date">The Date</div>
+          </div>
+          <div class="time">The Time</div>
         </div>
-        <div class="time">The Time</div>
       </div>
     </div>
     <footer>
