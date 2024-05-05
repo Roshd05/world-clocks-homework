@@ -8,7 +8,8 @@ let lisbontimeElement = document.querySelector(".time");
 let lisbonTime = moment().tz("Europe/Lisbon");
 
 lisbonDateElement.innerHTML = lisbonTime.format("MMMM	Do YYYY");
-lisbontimeElement.innerHTML = lisbonTime.format("h:mm:ss");
+lisbontimeElement.innerHTML = lisbonTime.format( "h:mm:ss [<small>]A[</small>]"
+);
 }
 
 function updateTime() {
@@ -21,7 +22,8 @@ let sydneytimeElement = document.querySelector(".time");
 let sydneyTime = moment().tz("Australia/Sydney");
 
 sydneyDateElement.innerHTML = sydneyime.format("MMMM	Do YYYY");
-sydneytimeElement.innerHTML = sydneyTimeTime.format("h:mm:ss");
+sydneytimeElement.innerHTML = sydneyTimeTime.format( "h:mm:ss [<small>]A[</small>]"
+);
 }
 }
 
@@ -38,8 +40,11 @@ function updateCity(event) {
     <h2>${cityName}</h2>
     <div class="date">${cityName.format("MMMM Do YYYY")}</div>
     </div>
-    <div class="time">${cityTime.format("h:mm:ss")}</div>
+    <div class="time">${cityTime.format("h:mm:ss")}<small>${cityTime.format(
+    "A"
+  )}</small></div>
     </div>
+    <a href="/">All Cities</a>
     `;
 }
 
