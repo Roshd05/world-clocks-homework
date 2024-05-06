@@ -47,6 +47,7 @@ select {
   padding: 30px 0;
   border-bottom-style: double;
 }
+
 .city:last-child {
   border: none;
 }
