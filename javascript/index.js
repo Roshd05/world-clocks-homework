@@ -1,4 +1,5 @@
 function updateTime() {
+  // Lisbon
   let lisbonElement = document.querySelector("#lisbon");
   if (lisbonElement) {
     let lisbonDateElement = document.querySelector(".date");
@@ -10,7 +11,7 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-
+  // Caracas
   let caracasElement = document.querySelector("#caracas");
   if (caracasElement) {
     let caracasDateElement = document.querySelector(".date");
