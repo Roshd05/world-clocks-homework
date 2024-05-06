@@ -17,8 +17,8 @@ function updateTime() {
     let sydneytimeElement = document.querySelector(".time");
     let sydneyTime = moment().tz("Australia/Sydney");
 
-    sydneyDateElement.innerHTML = sydneyime.format("MMMM	Do YYYY");
-    sydneytimeElement.innerHTML = sydneyTimeTime.format(
+    sydneyDateElement.innerHTML = sydneyTime.format("MMMM Do YYYY");
+    sydneytimeElement.innerHTML = sydneyTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
