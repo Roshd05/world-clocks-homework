@@ -11,14 +11,14 @@ function updateTime() {
     );
   }
 
-  let lisbonElement = document.querySelector("#lisbon");
-  if (lisbonElement) {
-    let lisbonDateElement = document.querySelector(".date");
-    let lisbontimeElement = document.querySelector(".time");
-    let lisbonTime = moment().tz("Europe/Lisbon");
+  let barcelonaElement = document.querySelector("#barcelona");
+  if (barcelonaElement) {
+    let barcelonaDateElement = document.querySelector(".date");
+    let barcelonatimeElement = document.querySelector(".time");
+    let barcelonaime = moment().tz("Europe/Barcelona");
 
-    lisbonDateElement.innerHTML = lisbonTime.format("MMMM Do YYYY");
-    lisbontimeElement.innerHTML = lisbonTime.format(
+    barcelonaDateElement.innerHTML = barcelonaTime.format("MMMM Do YYYY");
+    barcelonatimeElement.innerHTML = barcelonaTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
